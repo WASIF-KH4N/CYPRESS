@@ -1,37 +1,4 @@
-   /* describe('Sauce Demo Test', () => {
 
-    it('Login and add product to cart', () => {
-
-        // Open Sauce Demo
-        cy.visit('https://www.saucedemo.com/')
-
-        // Enter username
-        cy.get('[data-test="username"]')
-            .type('standard_user')
-
-        // Enter password
-        cy.get('[data-test="password"]')
-            .type('secret_sauce')
-
-        // Click Login
-        cy.get('[data-test="login-button"]')
-            .click()
-
-        // Verify Products page
-        cy.get('.title')
-            .should('have.text', 'Products')
-
-        // Add product to cart
-        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]')
-            .click()
-
-        // Verify cart has 1 item
-        cy.get('.shopping_cart_badge')
-            .should('have.text', '1')
-
-    })
-
-})  */
 
     describe('My First Test', () => {
         it('Incorrect Username and Incorrect Password', () => {
@@ -67,3 +34,38 @@
             cy.get('.title').should('have.text', 'Products')
         })
     })
+
+   /* describe('Sauce Demo Test', () => {
+
+    it('Login and add product to cart', () => {
+
+        // Open Sauce Demo
+        cy.visit('https://www.saucedemo.com/')
+
+        // Enter username
+        cy.get('[data-test="username"]')
+            .type('standard_user')
+
+        // Enter password
+        cy.get('[data-test="password"]')
+            .type('secret_sauce')
+
+        // Click Login
+        cy.get('[data-test="login-button"]')
+            .click()
+
+        // Verify Products page
+        cy.get('.title')
+            .should('have.text', 'Products')
+
+        // Add product to cart
+        cy.get('[data-test="add-to-cart-sauce-labs-backpack"]')
+            .click()
+
+        // Verify cart has 1 item
+        cy.get('.shopping_cart_badge')
+            .should('have.text', '1')
+
+    })
+
+})  */
