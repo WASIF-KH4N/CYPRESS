@@ -1,0 +1,15 @@
+{
+  "name": "cypress",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "wasif",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "cypress": "^15.21.1"
+  }
+}
