@@ -42,7 +42,7 @@ describe("Alert window practice",()=>{
         cy.get("#result").should("have.text","You entered: Welcome to Cypress")
     })
 
-    it.only("Authentication Alert",()=>{
+    it("Authentication Alert",()=>{
         cy.visit("https://the-internet.herokuapp.com/basic_auth",{
             auth:{
                 username:"admin",

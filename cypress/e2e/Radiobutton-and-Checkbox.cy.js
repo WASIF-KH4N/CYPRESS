@@ -30,7 +30,7 @@ describe("Radio Button Practice",()=>{
 
        // cy.get(".form-check-input").check().should("be.checked") // Multiple check
        
-       cy.get("input.form-check-input[type='checkbox']").check().should("be.checked")
+        cy.get("input.form-check-input[type='checkbox']").check().should("be.checked")
         cy.get("input.form-check-input[type='checkbox']").uncheck().should("not.be.checked") // Multiple uncheck
 
         cy.get("input.form-check-input[type='checkbox']").first().check().should("be.checked") // First checkbox check
