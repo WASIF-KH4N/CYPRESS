@@ -6,7 +6,7 @@ describe("Mouse Controller Suite", () => {
 
     })
 
-    it.only("Right Click", () => {
+    it("Right Click", () => {
         cy.visit("https://qaplayground.com/practice/buttons")
         cy.get("#rightClickBtn").rightclick() // Trigger right click event on the button
         cy.get("#result-s08").should("have.text","Context menu triggered!")

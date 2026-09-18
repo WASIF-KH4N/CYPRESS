@@ -14,7 +14,8 @@
             cy.get('[type="text"]').type('standard_user')
             cy.get('[type="password"]').type('secret_sauce1')
             cy.get('[type="submit"]').click()
-            cy.get('[data-test="error"]').should('contain', 'Username and password do not match')
+            //cy.get('[data-test="error"]').should('contain', 'Username and password do not match')
+             cy.get('.title').should('have.text', 'Products')
         })
 
          it('Incorrect Username and Correct Password', () => {

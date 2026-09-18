@@ -54,7 +54,7 @@ describe("File Upload Suite", () =>
     
     })
 
-    it.only("File Upload - Shadow DOM", () => {
+    it("File Upload - Shadow DOM", () => {
         cy.visit("https://www.htmlelements.com/demos/fileupload/shadow-dom/index.htm")
         cy.title().should('eq', 'File Upload Shadow DOM')
         cy.get(".smart-browse-input",{includeShadowDom: true}).attachFile("dart.pdf") // Attach a file to the input field inside the shadow DOM
